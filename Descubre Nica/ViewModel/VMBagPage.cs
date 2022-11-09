@@ -30,7 +30,7 @@ namespace Descubre_Nica.ViewModel
         #region Procesos
         public async Task BTPlanearGira()
         {
-            await Navigation.PushAsync(new GiraPage());
+            await Navigation.PushAsync(new SelDptoPage());
         }
         public void ProcesoSimple()
         {

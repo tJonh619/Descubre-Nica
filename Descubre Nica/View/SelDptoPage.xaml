@@ -1,12 +1,38 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Descubre_Nica.View.SelDptoPage">
+             x:Class="Descubre_Nica.View.SelDptoPage"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundImageSource="Fondo.jpg">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <Grid>
+            <StackLayout TranslationX="10" TranslationY="30">
+                <Image Source="FlechitaOscura.png" 
+                       HorizontalOptions="Start" 
+                       VerticalOptions="Start" 
+                       Rotation="90"/>
+                <StackLayout TranslationX="20">
+                    <Button CornerRadius="20" 
+                            BackgroundColor="#61B071" 
+                            Text="Elegir Departamento"
+                            TextColor="White"
+                            FontAttributes="Bold"
+                            FontSize="Medium"
+                            HorizontalOptions="Start"/>
+                    <Frame HorizontalOptions="Start" CornerRadius="30" ScaleY="0.8">
+                        <StackLayout Orientation="Horizontal" Spacing="20">
+                            <Image Source="triangulo.png" Scale="1.2"/>
+                            <Label Text="San Marcos, Carazo" FontSize="Medium" ScaleY="1.3" FontAttributes="Bold"/>
+                        </StackLayout>
+                    </Frame>
+                </StackLayout>
+                <StackLayout TranslationX="25" Margin="0,20,0,0">
+                    <Label Text="sitios turisticos" FontSize="Medium"/>
+                    <Frame CornerRadius="20" HeightRequest="200" HorizontalOptions="Start" WidthRequest="250">
+                        
+                    </Frame>
+                </StackLayout>
+            </StackLayout>
+        </Grid>
     </ContentPage.Content>
 </ContentPage>
