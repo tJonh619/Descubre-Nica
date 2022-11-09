@@ -10,9 +10,9 @@ using Xamarin.Forms.Xaml;
 namespace Descubre_Nica.View
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Configuracion : ContentPage
+    public partial class SettingsPage : ContentPage
     {
-        public Configuracion()
+        public SettingsPage()
         {
             InitializeComponent();
         }

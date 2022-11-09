@@ -1,10 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Descubre_Nica.View.Gira" BackgroundImageSource="Fondo.jpg"
-             NavigationPage.HasNavigationBar="False">
+             x:Class="Descubre_Nica.View.GiraPage"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundImageSource="Fondo.jpg">
     <ContentPage.Content>
-        <StackLayout>
+        <Grid x:Name="MainContent">
             <StackLayout AnchorX="20" TranslationY="60">
                 <Frame TranslationY="30" BackgroundColor="#61AF71" CornerRadius="30" HeightRequest="500">
                     <StackLayout Spacing="20" HorizontalOptions="CenterAndExpand">
@@ -51,6 +52,6 @@
                     </StackLayout>
                 </Frame>
             </StackLayout>
-        </StackLayout>
+            </Grid>
     </ContentPage.Content>
 </ContentPage>

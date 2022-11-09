@@ -12,5 +12,5 @@
 
     <local:HomePage/>
     <local:BagPage/>
-    <local:Configuracion/>
+    <local:SettingsPage/>
 </TabbedPage>

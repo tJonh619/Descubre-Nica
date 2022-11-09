@@ -4,8 +4,8 @@
              x:Class="Descubre_Nica.View.BagPage"
              IconImageSource="GreenBag.png"
              BackgroundImageSource="Fondo.jpg">
-    <ContentPage.Content>
-        <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+    <ContentPage.Content >
+        <Grid x:Name="MainContent">
             <StackLayout HorizontalOptions="Center" TranslationY="60">
                 <Label Text="DescubreNica"
                             FontSize="Medium" 
@@ -30,8 +30,7 @@
                                 FontAttributes="Bold"
                                 BackgroundColor="#60AF71"
                                 HorizontalOptions="Center"
-                                Scale="1.1"
-                                Clicked="PlanearGira_Clicked"/>
+                                Scale="1.1" Command="{Binding commandPlanearGira}"/>
                 </StackLayout>
                 <StackLayout Margin="0,20,0,0" VerticalOptions="Center" HorizontalOptions="Fill">
                     <Label Text="Podemos ir a..." HorizontalOptions="Fill" Margin="30,0,0,0"/>
@@ -46,6 +45,6 @@
                     </Frame>
                 </StackLayout>
             </StackLayout>
-        </StackLayout>
+        </Grid>
     </ContentPage.Content>
 </ContentPage>
