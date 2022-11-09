@@ -11,12 +11,12 @@ using Xamarin.Forms.Xaml;
 namespace Descubre_Nica.View
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class GiraPage : ContentPage
+    public partial class SelDptoPage : ContentPage
     {
-        public GiraPage()
+        public SelDptoPage()
         {
             InitializeComponent();
-            BindingContext = new VMGiraPage(Navigation);
+            BindingContext = new VMSelDptoPage(Navigation);  
         }
     }
 }
