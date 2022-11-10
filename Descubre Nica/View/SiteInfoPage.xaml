@@ -1,13 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Descubre_Nica.View.SiteInfoPage">
+             x:Class="Descubre_Nica.View.SiteInfoPage"
+             BackgroundColor="#92d4a0"
+             NavigationPage.HasNavigationBar="False">
     <ContentPage.Content>
         <Grid>
             <StackLayout>
-                <StackLayout Orientation="Horizontal">
-                    <ImageButton Source="flechita.png" Rotation="180"/>
-                    <Label Text="Informacion del sitio"/>
+                <StackLayout Orientation="Horizontal" WidthRequest="200" BackgroundColor="White" HeightRequest="50">
+                    <ImageButton Source="flechitaOscura.png" Rotation="90" BackgroundColor="White" TranslationX="5"/>
+                    <Label Text="Informacion del sitio" FontSize="Medium" FontAttributes="Bold" HorizontalOptions="CenterAndExpand" TranslationY="10" TranslationX="-10"/>
                 </StackLayout>
             </StackLayout>
         </Grid>

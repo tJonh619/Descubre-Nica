@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Descubre_Nica.View.SelDptoPage"
              NavigationPage.HasNavigationBar="False"
-             BackgroundImageSource="Fondo.jpg">
+             BackgroundImageSource="Fondo.Jpg">
     <ContentPage.Content>
         <Grid>
             <StackLayout TranslationX="10" TranslationY="30">
@@ -38,7 +38,7 @@
                         <ScrollView>
                             <StackLayout>
                                 <Label Text="hola"/>
-                                <Button Text="hola" WidthRequest="600" HorizontalOptions="Start"/>
+                                <Button Text="hola" WidthRequest="600" HorizontalOptions="Start" Command="{Binding commandSiteInfo}"/>
                                 <Label Text="hola"/>
                                 <Label Text="hola"/>
 

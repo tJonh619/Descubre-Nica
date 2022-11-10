@@ -32,6 +32,11 @@ namespace Descubre_Nica.ViewModel
         {
             await Navigation.PushAsync(new GiraPage());
         }
+
+        public async Task BTSiteInfo()
+        {
+            await Navigation.PushAsync(new SiteInfoPage());
+        }
         public void ProcesoSimple()
         {
 
@@ -39,6 +44,7 @@ namespace Descubre_Nica.ViewModel
         #endregion
         #region Comandos
         public ICommand commandAceptar => new Command(async () => await BTAceptar());
+        public ICommand commandSiteInfo => new Command(async () => await BTSiteInfo());
         public ICommand ProcesoSimpCommand => new Command(ProcesoSimple);
         #endregion
 

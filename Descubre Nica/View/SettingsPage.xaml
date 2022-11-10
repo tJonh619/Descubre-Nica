@@ -4,7 +4,7 @@
              x:Class="Descubre_Nica.View.SettingsPage"
              NavigationPage.HasNavigationBar="False"
              IconImageSource="GreenSettings.png"
-             BackgroundImageSource="Fondo.pg">
+             BackgroundImageSource="Fondo.jpg">
     <ContentPage.Content>
         <Grid x:Name="MainContent">
             <StackLayout>
