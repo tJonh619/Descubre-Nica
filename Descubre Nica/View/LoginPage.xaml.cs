@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using Descubre_Nica.ViewModel;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -15,6 +15,7 @@ namespace Descubre_Nica.View
         public LoginPage()
         {
             InitializeComponent();
+            BindingContext = new VMLogin(Navigation);
         }
     }
 }
